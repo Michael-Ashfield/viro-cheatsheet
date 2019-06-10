@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Virology Cheat sheet</title>
+
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
+    integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
+    crossorigin="anonymous">
+
+
+  <script src="data.json"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <table>
+      <thead>
+        <tr>
+          <th>Symptom</th>
+          <th>Stealth</th>
+          <th>Resistance</th>
+          <th>Stage Speed</th>
+          <th>Transmission</th>
+          <th>level</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="obj in json" :key="obj.symptom">
+          <td>{{ obj.symptom }}</td>
+          <td>{{ obj.stealth }}</td>
+          <td>{{ obj.resistance }}</td>
+          <td>{{ obj.stagespeed }}</td>
+          <td>{{ obj.transmission }}</td>
+          <td>{{ obj.level }}</td>
+          <td><button @click="add(obj)">Add</button> <button>Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

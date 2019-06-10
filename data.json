@@ -1,0 +1,18 @@
+[
+    {
+        "symptom": "Acute Respiratory Distress Syndrome",
+        "stealth": -2,
+        "resistance": 0,
+        "stagespeed": -1,
+        "transmission": -2,
+        "level": 7
+    },
+    {
+        "symptom": "Alopecia",
+        "stealth": 0,
+        "resistance": 1,
+        "stagespeed": 2,
+        "transmission": 2,
+        "level": 4
+    }
+]
