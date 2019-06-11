@@ -19,30 +19,38 @@
 
 <body>
   <div id="app">
-    <table>
-      <thead>
-        <tr>
-          <th>Symptom</th>
-          <th>Stealth</th>
-          <th>Resistance</th>
-          <th>Stage Speed</th>
-          <th>Transmission</th>
-          <th>level</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="obj in json" :key="obj.symptom">
-          <td>{{ obj.symptom }}</td>
-          <td>{{ obj.stealth }}</td>
-          <td>{{ obj.resistance }}</td>
-          <td>{{ obj.stagespeed }}</td>
-          <td>{{ obj.transmission }}</td>
-          <td>{{ obj.level }}</td>
-          <td><button @click="add(obj)">Add</button> <button>Remove</button></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="grid-x">
+      <table class="medium-8 cell">
+        <thead>
+          <tr>
+            <th>Symptom</th>
+            <th>Stealth</th>
+            <th>Resistance</th>
+            <th>Stage Speed</th>
+            <th>Transmission</th>
+            <th>level</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="obj in json" :key="obj.symptom">
+            <td>{{ obj.symptom }}</td>
+            <td>{{ obj.stealth }}</td>
+            <td>{{ obj.resistance }}</td>
+            <td>{{ obj.stagespeed }}</td>
+            <td>{{ obj.transmission }}</td>
+            <td>{{ obj.level }}</td>
+            <td><button @click="add(obj)">Add</button> <button>Remove</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="medium-4 cell">
+        <div v-for="obj in symptomList">
+          <p>{{ obj.symptom }}</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </body>
 
