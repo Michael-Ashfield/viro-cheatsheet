@@ -22,6 +22,21 @@ window.onload = function () {
                         this.symptomList.push(obj);
                     }
                 }
+                this.update_totals();
+            },
+            remove: function (obj) {
+                if (this.symptomList.includes(obj)) {
+                    if (this.symptomList.length >= 0) {
+                        for (let index in this.symptomList) {
+                            if (this.symptomList[index] == obj) {
+                                this.symptomList.splice(index, 1);
+                            }
+                        }
+                    }
+                }
+                this.update_totals();
+            },
+            update_totals: function () {
                 let stealthTotal = 0;
                 let resistanceTotal = 0;
                 let speedTotal = 0;
@@ -36,7 +51,7 @@ window.onload = function () {
                 this.symptomTotals.resistance = resistanceTotal;
                 this.symptomTotals.speed = speedTotal;
                 this.symptomTotals.transmission = transmissionTotal;
-            },
+            }
         }
     });
 

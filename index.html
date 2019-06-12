@@ -40,18 +40,18 @@
             <td>{{ obj.stagespeed }}</td>
             <td>{{ obj.transmission }}</td>
             <td>{{ obj.level }}</td>
-            <td><button @click="add(obj)">Add</button> <button>Remove</button></td>
+            <td><button @click="add(obj)">Add</button> <button @click="remove(obj)">Remove</button></td>
           </tr>
         </tbody>
       </table>
       <div class="medium-4 cell">
+          <p>Stealth: {{ symptomTotals.stealth }}</p>
+          <p>Resistance: {{ symptomTotals.resistance }}</p>
+          <p>Speed: {{ symptomTotals.speed }}</p>
+          <p>transmission: {{ symptomTotals.transmission }}</p>
         <div v-for="obj in symptomList">
           <p>{{ obj.symptom }}</p>
         </div>
-        <p>Stealth: {{ symptomTotals.stealth }}</p>
-        <p>Resistance: {{ symptomTotals.resistance }}</p>
-        <p>Speed: {{ symptomTotals.speed }}</p>
-        <p>transmission: {{ symptomTotals.transmission }}</p>
       </div>
     </div>
 
