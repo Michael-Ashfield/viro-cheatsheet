@@ -13,7 +13,6 @@ window.onload = function () {
                     "transmission": 0,
                 }],
                 json: null
-
             }
         },
         methods: {
@@ -27,10 +26,16 @@ window.onload = function () {
                 let resistanceTotal = 0;
                 let speedTotal = 0;
                 let transmissionTotal = 0;
-                for (let symptom in this.symptomList) {
-                    stealthTotal += symptom.stealth;
-                    console.table(symptom.stealth);
+                for (let index in this.symptomList) {
+                    stealthTotal += this.symptomList[index].stealth;
+                    resistanceTotal += this.symptomList[index].resistance;
+                    speedTotal += this.symptomList[index].stagespeed;
+                    transmissionTotal += this.symptomList[index].transmission;
                 }
+                this.symptomTotals.stealth = stealthTotal;
+                this.symptomTotals.resistance = resistanceTotal;
+                this.symptomTotals.speed = speedTotal;
+                this.symptomTotals.transmission = transmissionTotal;
             },
         }
     });
