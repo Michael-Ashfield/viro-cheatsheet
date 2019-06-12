@@ -14,5 +14,53 @@
         "stagespeed": 2,
         "transmission": 2,
         "level": 4
+    },
+    {
+        "symptom": "Alkali perspiration",
+        "stealth": 2,
+        "resistance": -2,
+        "stagespeed": -2,
+        "transmission": -2,
+        "level": 7
+    },
+    {
+        "symptom": "Autophagocytosis Necrosis",
+        "stealth": -2,
+        "resistance": -2,
+        "stagespeed": 1,
+        "transmission": -2,
+        "level": 7
+    },
+    {
+        "symptom": "Choking",
+        "stealth": -3,
+        "resistance": -2,
+        "stagespeed": -2,
+        "transmission": -4,
+        "level": 3
+    },
+    {
+        "symptom": "Coughing",
+        "stealth": -1,
+        "resistance": 3,
+        "stagespeed": 1,
+        "transmission": 2,
+        "level": 1
+    },
+    {
+        "symptom": "Confusion",
+        "stealth": 1,
+        "resistance": -1,
+        "stagespeed": -3,
+        "transmission": 0,
+        "level": 4
+    },
+    {
+        "symptom": "Deafness",
+        "stealth": -1,
+        "resistance": -2,
+        "stagespeed": -1,
+        "transmission": -3,
+        "level": 4
     }
 ]
