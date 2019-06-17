@@ -33,7 +33,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(obj, index) in json" :key="index" v-bind:class="obj.isActive">
+          <tr v-for="(obj, index) in json" :key="index" v-bind:class="[obj.isActive ? 'active' : 'inActive']">
             <td>{{ obj.symptom }}</td>
             <td>{{ obj.stealth }}</td>
             <td>{{ obj.resistance }}</td>

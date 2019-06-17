@@ -37,6 +37,11 @@ window.onload = function () {
                         for (let index in this.symptomList) {
                             if (this.symptomList[index] == obj) {
                                 this.symptomList.splice(index, 1);
+                                for (let jsonIndex in this.json) {
+                                    if (this.json[jsonIndex].symptom == obj.symptom){
+                                        this.json[jsonIndex].isActive = "";
+                                    }
+                                }
                             }
                         }
                     }
