@@ -11,6 +11,8 @@ window.onload = function () {
                     "resistance": 0,
                     "speed": 0,
                     "transmission": 0,
+                    "cure": "",
+                    "chemicals": [],
                 }],
                 json: null
             }
@@ -18,8 +20,13 @@ window.onload = function () {
         methods: {
             add: function (obj) {
                 if (!this.symptomList.includes(obj)) {
-                    if (this.symptomList.length == 6) {
+                    if (this.symptomList.length != 6) {
                         this.symptomList.push(obj);
+                        for (let jsonIndex in this.json) {
+                            if (this.json[jsonIndex].symptom == obj.symptom){
+                                this.json[jsonIndex].isActive = "active";
+                            }
+                        }
                     }
                 }
                 this.update_totals();

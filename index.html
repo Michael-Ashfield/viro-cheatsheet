@@ -33,14 +33,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="obj in json" :key="obj.symptom">
+          <tr v-for="(obj, index) in json" :key="index" v-bind:class="obj.isActive">
             <td>{{ obj.symptom }}</td>
             <td>{{ obj.stealth }}</td>
             <td>{{ obj.resistance }}</td>
             <td>{{ obj.stagespeed }}</td>
             <td>{{ obj.transmission }}</td>
             <td>{{ obj.level }}</td>
-            <td><button @click="add(obj)">Add</button> <button @click="remove(obj)">Remove</button></td>
+            <td><button @click="add(obj)">Add</button> <button @click="remove(obj, index)">Remove</button></td>
           </tr>
         </tbody>
       </table>
@@ -50,7 +50,7 @@
           <p>Speed: {{ symptomTotals.speed }}</p>
           <p>transmission: {{ symptomTotals.transmission }}</p>
         <div v-for="obj in symptomList">
-          <p>{{ obj.symptom }}</p>
+          <p>{{ obj.symptom }} <button @click="remove(obj)">Remove</button></p>
         </div>
       </div>
     </div>

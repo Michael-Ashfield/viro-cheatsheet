@@ -5,7 +5,8 @@
         "resistance": 0,
         "stagespeed": -1,
         "transmission": -2,
-        "level": 7
+        "level": 7,
+        "isActive": "inactive"
     },
     {
         "symptom": "Alopecia",
@@ -13,7 +14,8 @@
         "resistance": 1,
         "stagespeed": 2,
         "transmission": 2,
-        "level": 4
+        "level": 4,
+        "isActive": "inactive"
     },
     {
         "symptom": "Alkali perspiration",
