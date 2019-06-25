@@ -45,13 +45,25 @@
         </tbody>
       </table>
       <div class="medium-4 cell">
-          <p>Stealth: {{ symptomTotals.stealth }}</p>
-          <p>Resistance: {{ symptomTotals.resistance }}</p>
-          <p>Speed: {{ symptomTotals.speed }}</p>
-          <p>transmission: {{ symptomTotals.transmission }}</p>
-        <div v-for="obj in symptomList">
-          <p>{{ obj.symptom }} <button @click="remove(obj)">Remove</button></p>
-        </div>
+        <p>Stealth: {{ symptomTotals.stealth }}</p>
+        <p>Resistance: {{ symptomTotals.resistance }}</p>
+        <p>Speed: {{ symptomTotals.speed }}</p>
+        <p>Transmission: {{ symptomTotals.transmission }}</p>
+        <p>Cure: {{ symptomTotals.cure }}</p>
+        <p>Chemicals required:</p>
+        <ol>
+          <li v-for="chem in symptomTotals.chemicals">{{ chem }}</li>
+        </ol>
+        <table>
+          <tr v-for="obj in symptomList">
+            <td>
+              <p>{{ obj.symptom }}</p>
+            </td>
+            <td>
+              <button @click="remove(obj)">Remove</button>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
 
