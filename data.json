@@ -142,5 +142,69 @@
         "stagespeed": 3,
         "transmission": 1,
         "level": 1
+    },
+    {
+        "symptom": "Metabolic Boost",
+        "stealth": -1,
+        "resistance": -2,
+        "stagespeed": 2,
+        "transmission": 1,
+        "level": 7
+    },
+    {
+        "symptom": "Mind Restoration",
+        "stealth": -1,
+        "resistance": -2,
+        "stagespeed": 1,
+        "transmission": -3,
+        "level": 5
+    },
+    {
+        "symptom": "Nano-symbiosis",
+        "stealth": 0,
+        "resistance": 2,
+        "stagespeed": 2,
+        "transmission": -1,
+        "level": 7
+    },
+    {
+        "symptom": "Narcolepsy",
+        "stealth": -1,
+        "resistance": -2,
+        "stagespeed": -3,
+        "transmission": -4,
+        "level": 6
+    },
+    {
+        "symptom": "Necrotic Metabolism",
+        "stealth": 2,
+        "resistance": -2,
+        "stagespeed": 1,
+        "transmission": 0,
+        "level": 5
+    },
+    {
+        "symptom": "Necrotizing Fasciitis",
+        "stealth": -3,
+        "resistance": -4,
+        "stagespeed": 0,
+        "transmission": -4,
+        "level": 6
+    },
+    {
+        "symptom": "Nocturnal Regeneration",
+        "stealth": 2,
+        "resistance": -1,
+        "stagespeed": -2,
+        "transmission": -1,
+        "level": 6
+    },
+    {
+        "symptom": "Plasma Fixation",
+        "stealth": 0,
+        "resistance": 3,
+        "stagespeed": -2,
+        "transmission": -2,
+        "level": 8
     }
 ]
